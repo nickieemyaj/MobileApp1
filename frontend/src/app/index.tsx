@@ -9,6 +9,29 @@ import { ThemedView } from '@/components/themed-view';
 import { WebBadge } from '@/components/web-badge';
 import { BottomTabInset, MaxContentWidth, Spacing } from '@/constants/theme';
 
+// ==========================================
+// YOUR JAVASCRIPT LESSON TASK 
+// Date of Change: 05-18-2026
+// ==========================================
+const myName = "Jaymee";
+
+const studioGreeting = (classmateName: string) => {
+  return `Hi ${classmateName}! Grab your camera, let's go on a photo walk with ${myName}. 📸`;
+};
+
+const classmates = [
+  "Ana", 
+  "Ben", 
+  "Carlo", 
+  "Mary Louise Maberez", 
+  "Lord Assi Canete"
+];
+
+// This logs the custom array directly to the Chrome F12 Console
+console.log(classmates.map(name => studioGreeting(name)));
+// ==========================================
+
+
 function getDevMenuHint() {
   if (Platform.OS === 'web') {
     return <ThemedText type="small">use browser devtools</ThemedText>;
